@@ -10,7 +10,7 @@ It replaces the old default simulation path based on `Proteus + VSPD` for day-to
 
 ```bash
 npm install
-npm start
+npm run dev
 ```
 
 ## Endpoint
