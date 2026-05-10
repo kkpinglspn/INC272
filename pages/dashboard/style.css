@@ -1,0 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Kalam:300,regular,700);
+
+* {
+    font-family: Kalam, sans-serif !important;
+    transition: all 0.3s;
+}
+
+.ac-controller {
+    display: flex;
+}
+
+body {
+    min-height: 100dvh !important;
+    overflow-y: auto !important;
+}
+
+.logout-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}

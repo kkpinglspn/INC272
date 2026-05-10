@@ -1,5 +1,9 @@
 let leds, btns, guage;
 
+if (localStorage.getItem('loggedIn') !== 'true') {
+  window.location.href = '/';
+}
+
 function init(link, ui) {
   headingCreator("Smart Home Control Panel", 3);
   ui.Utils.newLine();
@@ -17,6 +21,8 @@ function init(link, ui) {
   headingCreator("AC Controller", 4);
   ui.Utils.newLine();
   ACController(link, ui);
+
+  logoutButton()
 }
 
 function main(ui) {

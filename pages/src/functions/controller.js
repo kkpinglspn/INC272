@@ -27,6 +27,7 @@ function LEDController(link) {
           leds[id].setStatus(sts);
           room_lights[id] = sts ? true : false
 
+          // save the state of the room lights in localstorage
           localStorage.setItem("Room_Lights", JSON.stringify(room_lights));
         });
       },
@@ -52,10 +53,10 @@ function createACGuage() {
 }
 
 function ACController(link, ui) {
-  let acStateContainer = document.createElement("div");
-  acStateContainer.classList.add("ac-container");
-  acStateContainer.innerHTML += `<button id="ac_state" class="btn btn-primary text-white">Toggle AC</button>`;
-  document.body.appendChild(acStateContainer);
+  // let acStateContainer = document.createElement("div");
+  // acStateContainer.classList.add("ac-container");
+  // acStateContainer.innerHTML += `<button id="ac_state" class="btn btn-primary text-white">Toggle AC</button>`;
+  // document.body.appendChild(acStateContainer);
 
   gauge = createACGuage();
 
