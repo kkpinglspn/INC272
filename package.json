@@ -5,8 +5,7 @@
   "description": "Mock WebSocket hardware server for INC272-2026",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "concurrently \"npm run start\" \"live-server ./pages --port=8080 --watch=pages\""
+    "start": "concurrently \"npm run start\" \"live-server ./pages --port=8080 --watch=pages\""
   },
   "dependencies": {
     "concurrently": "^9.2.1",

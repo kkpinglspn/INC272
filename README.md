@@ -1,31 +1,29 @@
-# Mock Hardware Server
+# SmartHome Dashboard
 
-This server provides a lightweight WebSocket-based device simulator for `INC272-2026`.
+This is "SmartHome Dashboard" which is using `eec-web-gui` libs to emulate home smarthome work.
 
-## Why it exists
+## Installation
+1. Clone this project and go into this project folder
+```sh
+git clone https://github.com/kkpinglspn/INC272
+cd INC272
+```
 
-It replaces the old default simulation path based on `Proteus + VSPD` for day-to-day teaching and student onboarding.
-
-## Start
-
-```bash
+2. Install Dependency (if you didn't use npm, just change from npm to other package manager like pnpm, yarn, etc.)
+```sh
 npm install
-npm run dev
 ```
 
-## Endpoint
-
-```text
-ws://127.0.0.1:3000/ecclab
+3. Start the project
+```sh
+npm run start
 ```
 
-## Intended Compatibility
+After run the command, Static Server gonna start at `http://localhost:8080` and using websocket server at `http://localhost:3000/eec`
 
-The server is designed to support the legacy example apps in `examples/apps/web_apps/` with minimal changes.
+---
 
-## Notes
-
-- ADC values change automatically over time.
-- Push-switch states also toggle over time.
-- LED and PWM states respond to incoming commands.
-- The behavior is intentionally simple and predictable.
+Create by:
+- Peeranat Charungrattanapong 67070504025
+- Pakkapon Rattanaumpawan 67070504026
+- Sirawich 67070504027
